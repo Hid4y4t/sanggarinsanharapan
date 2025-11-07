@@ -1,0 +1,104 @@
+GET http://localhost:5000/admin
+
+###
+POST http://localhost:5000/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTYyNTkxNiwiZXhwIjoxNzYxNjI2ODE2fQ.vVS8J-ODZRT142-pcpa0Ifbi1rrKedOv22CRAX1ffpo
+
+{
+  "nama": "Admin Baru",
+  "email": "admin@aDMIN",
+  "password": "123",
+  "role": "superadmin",
+  "status": "active"
+}
+
+###
+GET http://localhost:5000/admin/1
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin.baru@example.com",
+    "password": "password123"
+}
+
+###
+
+GET http://localhost:5000/admin/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTUyNDM5OCwiZXhwIjoxNzYxNTI1Mjk4fQ.sx4y4jlzMrRXkPAgPdxn7UqAslBMLt7j3JAojlHgCGg
+###
+GET http://localhost:5000/refresh-token
+
+###
+DELETE  http://localhost:5000/logout
+###
+POST http://localhost:5000/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTUyNDM5OCwiZXhwIjoxNzYxNTI1Mjk4fQ.sx4y4jlzMrRXkPAgPdxn7UqAslBMLt7j3JAojlHgCGg
+
+{
+  "nama": "Admin Baru",
+  "email": "adminru@email",
+  "password": "123",
+  "role": "admin",
+  "status": "active"
+}
+
+###
+PATCH http://localhost:5000/admin/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTYyNTEyNSwiZXhwIjoxNzYxNjI2MDI1fQ.FWAtfSTFgfWLJZpRyezSe3B8HzevMi92VAGc5Seivh8
+
+{
+  "nama": "saya admin update",
+  "email": "adminru@email",
+  "password": "12334",
+  "role": "admin",
+  "status": "active"
+}
+
+###
+DELETE  http://localhost:5000/admin/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTYyNTEyNSwiZXhwIjoxNzYxNjI2MDI1fQ.FWAtfSTFgfWLJZpRyezSe3B8HzevMi92VAGc5Seivh8
+
+###
+PUT  http://localhost:5000/agenda/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTYyODI2MywiZXhwIjoxNzYxNjI5MTYzfQ.uQpTHzqPheRnruz89gUvhgTGG9o4Q_bJ_b9p_ZFdYFU
+
+{
+"judul_kegiatan": "Workshop wayang",
+"deskripsi_kegiatan": "Sebuah workshop untuk belajar seni rupa modern.",
+"tanggal_mulai": "2024-07-15",
+"tanggal_selesai": "2024-07-20",
+"waktu_mulai": "10:00",
+"waktu_selesai": "16:00",
+"lokasi": "Gedung Seni Jakarta",
+"alamat_lengkap": "Jl. Merdeka No.10, Jakarta"
+}
+
+
+# =========================================================
+
+###
+POST http://localhost:5000/perusahaan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJuYW1hIjoiQWRtaW4gQmFydSIsImVtYWlsIjoiYWRtaW4uYmFydUBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MTY0Njg3OSwiZXhwIjoxNzYxNjQ3Nzc5fQ.VH-wPFSN9v-q9CZiZPNVYqUi3Y21IxcajKybihQinSs
+
+{
+  "nama_perusahaan": "Galeri Seni Indah",
+  "deskripsi_singkat": "Galeri seni terkemuka yang menyajikan karya-karya lukisan terbaik",
+  "deskripsi_lengkap": "Galeri Seni Indah merupakan pusat seni dan budaya yang telah berdiri sejak tahun 2010...",
+  "alamat": "Jl. Seni Raya No. 123, Jakarta Pusat 10110",
+  "telepon": "021-1234567",
+  "email": "info@galeriseniindah.com",
+  "website": "https://www.galeriseniindah.com",
+  "ig": "@galeriseniindah",
+  "visi": "Menjadi pusat seni terdepan",
+  "misi": "1. Menyediakan platform...",
+  "tahun_berdiri": 2010,
+  "jumlah_anggota": 15
+}

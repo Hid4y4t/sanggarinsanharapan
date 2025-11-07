@@ -1,0 +1,24 @@
+config
+    |-koneksi.js
+controllers
+    |-admin.js
+    |-RefreshToken.js
+    |-ProfilePerusahaan.js
+    |-Lukisan.js
+    |-RefreshToken.js
+middleware
+    |-VerifyToken.js
+models
+    |-admin.js
+    |-Agenda.js
+    |-Lukisan.js
+    |-ProfilePerusahaan.js
+routes
+    |-Admin.js
+    |-ProfilePerusahaan.js
+    |-Lukisan.js
+    |-Agenda.js
+upload
+    |-perusahaan //folder berisi logo untuk perusahaan
+    |-lukisan //older berisi foto lukisan
+Index.js
