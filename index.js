@@ -23,7 +23,7 @@ import ArtikelRoute from "./routes/Artikel.js";
 
 const app = express();
 app.use(cors({
-    origin: 'https://sanggarinsanharapan.rumahsehatkita.online/',
+    origin: 'https://sanggarinsanharapan.rumahsehatkita.online',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization']
